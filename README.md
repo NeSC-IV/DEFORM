@@ -1,5 +1,5 @@
 # DEFORM: Adaptive Formation Reconfiguration of Multi-robot System in Confined Environments
 
-Video: [bilibili](https://www.bilibili.com/video/BV1iBY9epEhX)
+Video: [YouTube](https://www.youtube.com/watch?v=Gp7ctSpoegI)
 
 Code comming soon
