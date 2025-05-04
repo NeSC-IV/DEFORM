@@ -34,7 +34,7 @@ public:
     void showTFAfter(vector<Eigen::Vector2d> pts);
     void showFormationLines(vector<Eigen::Vector2d> pts);
     void showOdomAndLocalLine(vector<Eigen::Vector2d> line);
-	void showCustomPath(vector<Eigen::Vector2d> path);
+    void showCustomPath(vector<Eigen::Vector2d> path);
     typedef std::shared_ptr<toVisualization> Ptr;
 private:
     ros::NodeHandle nh_pri;
@@ -51,5 +51,5 @@ private:
 
     ros::Publisher show_width_line_middle_leader, show_width_line_one_leader, show_width_line_other_leader, show_width_mid_point_leader;
     ros::Publisher show_update_area_leader;
-	ros::Publisher show_custom_path;
+    ros::Publisher show_custom_path;
 };

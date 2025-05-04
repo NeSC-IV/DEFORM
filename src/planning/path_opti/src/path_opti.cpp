@@ -126,7 +126,7 @@ void PathOptimizer::ESDFAndLocalPointOpt(Eigen::Vector2d& pt, double obs_clear/*
         pt = x;
     } else {
         ROS_ERROR("[local point opt]:%s", lbfgs::lbfgs_strerror(ret));
-	}
+    }
 }
 
 double PathOptimizer::local_point_costFunction(void *instance, const Eigen::VectorXd &x, Eigen::VectorXd &g) {

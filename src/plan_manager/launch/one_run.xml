@@ -1,8 +1,8 @@
 <launch>
     <arg name="tb_id" default="0"/>
     <arg name="tb_num" default="4"/>
-	<arg name="frm_type" default="4"/>
-	<arg name="other_num_in_opti" default="2"/>
+    <arg name="frm_type" default="4"/>
+    <arg name="other_num_in_opti" default="2"/>
     <node if = "$(eval tb_id != 0)" name="tb_$(arg tb_id)_manager_node" type="plan_manager_node" pkg="plan_manager" output="screen">
 
         <remap from="~cmd_vel" to="tb_$(arg tb_id)/cmd_vel"/>
@@ -18,9 +18,9 @@
         <param name="plan_manager/leader_id" value="0"/>
         <param name="plan_manager/formation_interval" value="0.8"/>
         <param name="plan_manager/tb_id" value="$(arg tb_id)"/>
-		<param name="plan_manager/tb_num" value="$(arg tb_num)"/>
-		<param name="plan_manager/other_num_in_opti" value="$(arg other_num_in_opti)"/>
-		<param name="plan_manager/frm_type" value="$(arg frm_type)"/>
+        <param name="plan_manager/tb_num" value="$(arg tb_num)"/>
+        <param name="plan_manager/other_num_in_opti" value="$(arg other_num_in_opti)"/>
+        <param name="plan_manager/frm_type" value="$(arg frm_type)"/>
 
         <param name="plan_manager/scalability_data_dir" value="$(find plan_manager)/scalability_data_dir/data_$(arg tb_num)$(arg tb_id).txt"/>
 
@@ -32,11 +32,11 @@
         <param name="controller/dt" value="0.1"/>
         <param name="controller/distance_other_tb_dist" value="0.4"/>
         <param name="controller/tb_num" value="$(arg tb_num)"/>
-		<param name="controller/other_num_in_opti" value="$(arg other_num_in_opti)"/>
+        <param name="controller/other_num_in_opti" value="$(arg other_num_in_opti)"/>
 
         <rosparam file="$(find plan_env2d)/config/env.yaml" command="load" />
-		<rosparam file="$(find plan_rrt)/config/rrt_cfg.yaml" command="load" />
-		<rosparam file="$(find plan_manager)/config/frm_shape.yaml" command="load" />
+        <rosparam file="$(find plan_rrt)/config/rrt_cfg.yaml" command="load" />
+        <rosparam file="$(find plan_manager)/config/frm_shape.yaml" command="load" />
 
     </node>
 
@@ -55,9 +55,9 @@
         <param name="plan_manager/leader_id" value="0"/>
         <param name="plan_manager/formation_interval" value="0.8"/>
         <param name="plan_manager/tb_id" value="$(arg tb_id)"/>
-		<param name="plan_manager/tb_num" value="$(arg tb_num)"/>
-		<param name="plan_manager/other_num_in_opti" value="$(arg other_num_in_opti)"/>
-		<param name="plan_manager/frm_type" value="$(arg frm_type)"/>
+        <param name="plan_manager/tb_num" value="$(arg tb_num)"/>
+        <param name="plan_manager/other_num_in_opti" value="$(arg other_num_in_opti)"/>
+        <param name="plan_manager/frm_type" value="$(arg frm_type)"/>
 
         <param name="plan_manager/scalability_data_dir" value="$(find plan_manager)/scalability_data_dir/data_$(arg tb_num)$(arg tb_id).txt"/>
 
@@ -69,11 +69,11 @@
         <param name="controller/dt" value="0.1"/>
         <param name="controller/distance_other_tb_dist" value="0.4"/>
         <param name="controller/tb_num" value="$(arg tb_num)"/>
-		<param name="controller/other_num_in_opti" value="$(arg other_num_in_opti)"/>
+        <param name="controller/other_num_in_opti" value="$(arg other_num_in_opti)"/>
 
         <rosparam file="$(find plan_env2d)/config/env.yaml" command="load" />
-		<rosparam file="$(find plan_rrt)/config/rrt_cfg.yaml" command="load" />
-		<rosparam file="$(find plan_manager)/config/frm_shape.yaml" command="load" />
+        <rosparam file="$(find plan_rrt)/config/rrt_cfg.yaml" command="load" />
+        <rosparam file="$(find plan_manager)/config/frm_shape.yaml" command="load" />
 
     </node>
     <node name="tb_$(arg tb_id)_ot_server" type="ot_srv.py" pkg="ot_process" output="screen">

@@ -28,7 +28,7 @@ catkin_package(
 )
 
 if(NOT Eigen3_INCLUDE_DIRS)
-	set(Eigen3_INCLUDE_DIRS ${EIGEN3_INCLUDE_DIRS})
+    set(Eigen3_INCLUDE_DIRS ${EIGEN3_INCLUDE_DIRS})
 endif()
 
 include_directories( 

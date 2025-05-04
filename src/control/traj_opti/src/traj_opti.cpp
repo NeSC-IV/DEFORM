@@ -102,7 +102,7 @@ NMPCController::NMPCController(ros::NodeHandle &nh_) : nx_(3), nu_(2){
     nh_.param("controller/T", T_, -1);
     nh_.param("controller/dt", dt_, -0.1);
     nh_.param("controller/distance_other_tb_dist", dist_other_th, -0.1);
-	nh_.param("controller/other_num_in_opti", other_num, -1);
+    nh_.param("controller/other_num_in_opti", other_num, -1);
     other_constraint_horizon = T_;
 }
 

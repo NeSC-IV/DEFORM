@@ -1,21 +1,21 @@
 /*
 HOW TO USE:
-	step1: initialize FindMaxFreeRegion, include grid map and maximum formation width
-		   initMapandMaxGap(..., ...);
-	step2: check maximum free region width
-		   updataFormationGap(...); -- current formation width + one formation interval
-		   setEndPointandupdateBoundary(..., ...) -- set reference line and update Boundary box
-		   updatePointsRegion() -- fill environment point to boundary box, then divide the environment into two parts based on a line.
-		   solve_max_b() -- solve the maximum gap in two lines.
-		   getWidth() -- get solved width
-	option step :
-		   getWidthBestPoint() -- update local goal to center point between two line end
-	debug step (show infomation) : 
-		   getBox() -- return the boundary box leftdown point and rightup point.
-		   test(..., ...) -- run after solve_max_b(), and get solved two line that is maximum gap.
+    step1: initialize FindMaxFreeRegion, include grid map and maximum formation width
+           initMapandMaxGap(..., ...);
+    step2: check maximum free region width
+           updataFormationGap(...); -- current formation width + one formation interval
+           setEndPointandupdateBoundary(..., ...) -- set reference line and update Boundary box
+           updatePointsRegion() -- fill environment point to boundary box, then divide the environment into two parts based on a line.
+           solve_max_b() -- solve the maximum gap in two lines.
+           getWidth() -- get solved width
+    option step :
+           getWidthBestPoint() -- update local goal to center point between two line end
+    debug step (show infomation) : 
+           getBox() -- return the boundary box leftdown point and rightup point.
+           test(..., ...) -- run after solve_max_b(), and get solved two line that is maximum gap.
 
-		   getLocalMap() -- return the local obstacles
-		   getLocalMapGreater(), getLocalMapLess() -- return obstacles on one side of the line
+           getLocalMap() -- return the local obstacles
+           getLocalMapGreater(), getLocalMapLess() -- return obstacles on one side of the line
 */
 
 

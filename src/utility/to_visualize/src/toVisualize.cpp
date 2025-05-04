@@ -23,15 +23,15 @@ void toVisualization::init(ros::NodeHandle &nh) {
     odom_path.header.frame_id = "world";
 
     show_update_area = nh_pri.advertise<visualization_msgs::Marker>("update_area",1);
-	
-	// not only leader publish
+    
+    // not only leader publish
     show_width_line_middle_leader = nh_pri.advertise<visualization_msgs::Marker>("width_line_middle",1);
     show_width_line_one_leader = nh_pri.advertise<visualization_msgs::Marker>("width_line_one",1);
     show_width_line_other_leader = nh_pri.advertise<visualization_msgs::Marker>("width_line_other",1);
     show_width_mid_point_leader = nh_pri.advertise<visualization_msgs::Marker>("width_mid_point",1);
     show_update_area_leader = nh_pri.advertise<visualization_msgs::Marker>("update_area",1);
 
-	show_custom_path = nh_pri.advertise<nav_msgs::Path>("custom_path", 1);
+    show_custom_path = nh_pri.advertise<nav_msgs::Path>("custom_path", 1);
 }
 
 void toVisualization::showCustomPath(vector<Eigen::Vector2d> path) {

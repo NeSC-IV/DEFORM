@@ -100,10 +100,10 @@ inline Eigen::Vector2i DroneDetector::pos2Depth(const Eigen::Vector4d &pose_in_c
 // determine whether a pixel is within the image
 inline bool DroneDetector::isInSensorRange(const Eigen::Vector2i &pixel)
 {
-	if (pixel(0) >= 0 && pixel(1) >= 0 && pixel(0) <= img_width_ && pixel(1) <= img_height_)
-		return true;
-	else 
-		return false;
+    if (pixel(0) >= 0 && pixel(1) >= 0 && pixel(0) <= img_width_ && pixel(1) <= img_height_)
+        return true;
+    else 
+        return false;
 }
 
 void DroneDetector::rcvMyOdomCallback(const nav_msgs::Odometry& odom)

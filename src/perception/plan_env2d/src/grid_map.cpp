@@ -154,8 +154,8 @@ void GridMap::initMap(ros::NodeHandle &nh)
   md_.flag_depth_odom_timeout_ = false;
   md_.flag_use_depth_fusion = false;
 
-	  md_.esdf_time_ = 0.0;
-	  md_.max_esdf_time_ = 0.0;
+  md_.esdf_time_ = 0.0;
+  md_.max_esdf_time_ = 0.0;
 }
 
 void GridMap::resetBuffer()
@@ -725,7 +725,7 @@ void GridMap::odomCallback(const nav_msgs::OdometryConstPtr &odom)
 
 void GridMap::cloudCallback(const sensor_msgs::PointCloud2ConstPtr &img)
 {
-	
+    
   pcl::PointCloud<pcl::PointXYZ> latest_cloud;
   pcl::fromROSMsg(*img, latest_cloud);
 
@@ -775,26 +775,26 @@ void GridMap::cloudCallback(const sensor_msgs::PointCloud2ConstPtr &img)
     // if (fabs(devi(0)) < mp_.local_update_range_(0) && fabs(devi(1)) < mp_.local_update_range_(1))
     if (true)
     {
-	  p2d_inf(0) = pt.x;
-	  p2d_inf(1) = pt.y;
+      p2d_inf(0) = pt.x;
+      p2d_inf(1) = pt.y;
 
-	  max_x = max(max_x, p2d_inf(0));
-	  max_y = max(max_y, p2d_inf(1));
+      max_x = max(max_x, p2d_inf(0));
+      max_y = max(max_y, p2d_inf(1));
 
-	  min_x = min(min_x, p2d_inf(0));
-	  min_y = min(min_y, p2d_inf(1));
+      min_x = min(min_x, p2d_inf(0));
+      min_y = min(min_y, p2d_inf(1));
 
-	  posToIndex(p2d_inf, inf_pt);
+      posToIndex(p2d_inf, inf_pt);
 
-	  if (!isInMap(inf_pt))
-		continue;
+      if (!isInMap(inf_pt))
+        continue;
 
-	  int idx_inf = toAddress(inf_pt);
+      int idx_inf = toAddress(inf_pt);
 
-	  md_.occupancy_buffer_inflate_[idx_inf] = 1;
+      md_.occupancy_buffer_inflate_[idx_inf] = 1;
     }
   }
-	
+    
   min_x = min(min_x, md_.camera_pos_(0));
   min_y = min(min_y, md_.camera_pos_(1));
 
@@ -806,7 +806,7 @@ void GridMap::cloudCallback(const sensor_msgs::PointCloud2ConstPtr &img)
 
   boundIndex(md_.local_bound_min_);
   boundIndex(md_.local_bound_max_);
-	
+    
 }
 
 void GridMap::publishMap()
@@ -1079,10 +1079,10 @@ void GridMap::updateESDFMap(Eigen::Vector2d bound_max){
           md_.distance_buffer_all_[idx] += (-md_.distance_buffer_neg_[idx] + mp_.resolution_);
       }
 
-	  t2 = ros::Time::now();
+      t2 = ros::Time::now();
 
-	  md_.esdf_time_ += (t2 - t1).toSec();
-	  md_.max_esdf_time_ = max(md_.max_esdf_time_, (t2 - t1).toSec());
+      md_.esdf_time_ += (t2 - t1).toSec();
+      md_.max_esdf_time_ = max(md_.max_esdf_time_, (t2 - t1).toSec());
 
 }
 
