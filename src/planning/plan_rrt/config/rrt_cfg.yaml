@@ -1,0 +1,14 @@
+frm_rrt:
+  # main rrt param
+  iter_num: 1500
+  goal_tolerance: 0.5
+  min_dis_to_obs: 0.3
+  steerMaxStep: 1.0
+  desire_width: 1.8
+  
+  # cost param
+  rho_d: 15
+  rho_v: 0.1
+  rho_w: 0
+  sigma_v: 1413.7
+  var: 0.01

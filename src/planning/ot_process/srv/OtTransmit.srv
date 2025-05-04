@@ -1,0 +1,5 @@
+int16 alloc_num
+geometry_msgs/Point[] start_pts
+geometry_msgs/Point[] goal_pts
+---
+int16[] alloc_result

@@ -1,0 +1,12 @@
+<launch>
+  <arg name="my_id" default="3"/>
+  <arg name="odom_topic" value="/tb_$(arg my_id)/odom"/>
+  <node pkg="drone_detect" type="drone_detect" name="test_drone_$(arg my_id)_detect" output="screen">
+    <rosparam command="load" file="$(find drone_detect)/config/camera.yaml" />
+    <rosparam command="load" file="$(find drone_detect)/config/default.yaml"/>
+    <param name="my_id"      value="$(arg my_id)" />
+    <remap from="~odometry"   to="$(arg odom_topic)"/>
+    <remap from="~depth" to="/tb_$(arg my_id)/camera/depth/image_raw"/>
+    <remap from="~new_depth_image" to="/tb_$(arg my_id)/camera/depth/image_filter"/>
+   </node>
+</launch>

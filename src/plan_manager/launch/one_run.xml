@@ -1,0 +1,86 @@
+<launch>
+    <arg name="tb_id" default="0"/>
+    <arg name="tb_num" default="4"/>
+	<arg name="frm_type" default="4"/>
+	<arg name="other_num_in_opti" default="2"/>
+    <node if = "$(eval tb_id != 0)" name="tb_$(arg tb_id)_manager_node" type="plan_manager_node" pkg="plan_manager" output="screen">
+
+        <remap from="~cmd_vel" to="tb_$(arg tb_id)/cmd_vel"/>
+
+        <remap from="~grid_map/odom" to="/tb_$(arg tb_id)/odom"/>
+<!--        <remap from="~grid_map/cloud" to="/obstacle_manual_cloud"/> -->
+        <remap from="~grid_map/pose"   to = "/pose"/> <!-- disable  -->
+<!--        <remap from="~grid_map/depth" to = "/tb_$(arg tb_id)/camera/depth/image_raw"/>-->
+        <remap from="~grid_map/depth" to = "/tb_$(arg tb_id)/camera/depth/image_filter"/>
+
+        <param name="plan_manager/forward_distance" value="1.3"/><!-- 设置的距离小于路径点的的端点-->
+        <param name="path_optimizer/obs_clearance" value="0.35"/>
+        <param name="plan_manager/leader_id" value="0"/>
+        <param name="plan_manager/formation_interval" value="0.8"/>
+        <param name="plan_manager/tb_id" value="$(arg tb_id)"/>
+		<param name="plan_manager/tb_num" value="$(arg tb_num)"/>
+		<param name="plan_manager/other_num_in_opti" value="$(arg other_num_in_opti)"/>
+		<param name="plan_manager/frm_type" value="$(arg frm_type)"/>
+
+        <param name="plan_manager/scalability_data_dir" value="$(find plan_manager)/scalability_data_dir/data_$(arg tb_num)$(arg tb_id).txt"/>
+
+        <param name="ot_client/tb_num" value="$(arg tb_num)"/>
+        <param name="ot_client/tb_id" value="$(arg tb_id)"/>
+
+        <param name="optimization/goal_distance_thresh" value="0.15"/>
+        <param name="controller/T" value="40"/>
+        <param name="controller/dt" value="0.1"/>
+        <param name="controller/distance_other_tb_dist" value="0.4"/>
+        <param name="controller/tb_num" value="$(arg tb_num)"/>
+		<param name="controller/other_num_in_opti" value="$(arg other_num_in_opti)"/>
+
+        <rosparam file="$(find plan_env2d)/config/env.yaml" command="load" />
+		<rosparam file="$(find plan_rrt)/config/rrt_cfg.yaml" command="load" />
+		<rosparam file="$(find plan_manager)/config/frm_shape.yaml" command="load" />
+
+    </node>
+
+    <node if = "$(eval tb_id == 0)" name="tb_$(arg tb_id)_manager_node" type="plan_manager_node" pkg="plan_manager" output="screen">
+
+        <remap from="~cmd_vel" to="tb_$(arg tb_id)/cmd_vel"/>
+
+        <remap from="~grid_map/odom" to="/tb_$(arg tb_id)/odom"/>
+<!--        <remap from="~grid_map/cloud" to="/obstacle_manual_cloud"/> -->
+        <remap from="~grid_map/pose"   to = "/pose"/> <!-- disable  -->
+<!--        <remap from="~grid_map/depth" to = "/tb_$(arg tb_id)/camera/depth/image_raw"/>-->
+        <remap from="~grid_map/depth" to = "/tb_$(arg tb_id)/camera/depth/image_filter"/>
+
+        <param name="plan_manager/forward_distance" value="1.3"/><!-- 设置的距离小于路径点的的端点-->
+        <param name="path_optimizer/obs_clearance" value="0.35"/>
+        <param name="plan_manager/leader_id" value="0"/>
+        <param name="plan_manager/formation_interval" value="0.8"/>
+        <param name="plan_manager/tb_id" value="$(arg tb_id)"/>
+		<param name="plan_manager/tb_num" value="$(arg tb_num)"/>
+		<param name="plan_manager/other_num_in_opti" value="$(arg other_num_in_opti)"/>
+		<param name="plan_manager/frm_type" value="$(arg frm_type)"/>
+
+        <param name="plan_manager/scalability_data_dir" value="$(find plan_manager)/scalability_data_dir/data_$(arg tb_num)$(arg tb_id).txt"/>
+
+        <param name="ot_client/tb_num" value="$(arg tb_num)"/>
+        <param name="ot_client/tb_id" value="$(arg tb_id)"/>
+
+        <param name="optimization/goal_distance_thresh" value="0.15"/>
+        <param name="controller/T" value="40"/>
+        <param name="controller/dt" value="0.1"/>
+        <param name="controller/distance_other_tb_dist" value="0.4"/>
+        <param name="controller/tb_num" value="$(arg tb_num)"/>
+		<param name="controller/other_num_in_opti" value="$(arg other_num_in_opti)"/>
+
+        <rosparam file="$(find plan_env2d)/config/env.yaml" command="load" />
+		<rosparam file="$(find plan_rrt)/config/rrt_cfg.yaml" command="load" />
+		<rosparam file="$(find plan_manager)/config/frm_shape.yaml" command="load" />
+
+    </node>
+    <node name="tb_$(arg tb_id)_ot_server" type="ot_srv.py" pkg="ot_process" output="screen">
+        <param name="ot_srv/tb_id" value="$(arg tb_id)"/>
+    </node>
+
+    <include file="$(find drone_detect)/launch/drone_detect.launch">
+        <arg name="my_id" value="$(arg tb_id)"/>
+    </include>
+</launch>

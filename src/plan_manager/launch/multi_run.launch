@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="0"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="1"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="2"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="3"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="4"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="5"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="6"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="7"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="8"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="9"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="10"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+    <include file="$(find plan_manager)/launch/one_run.xml">
+        <arg name="tb_id" value="11"/>
+        <arg name="tb_num" value="12"/>
+        <arg name="frm_type" value="6"/>
+    </include>
+</launch>

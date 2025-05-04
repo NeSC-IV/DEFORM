@@ -1,0 +1,5376 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /tb_odom1/tb11/Shape1
+        - /tb_odom1/tb21/Shape1
+        - /tb_odom1/tb31/Shape1
+        - /tb_odom1/tb41/Shape1
+        - /tb_odom1/tb51/Shape1
+        - /tb_odom1/tb61/Shape1
+        - /tb_odom1/tb71/Shape1
+        - /tb_odom1/tb81/Shape1
+        - /tb_odom1/tb91/Shape1
+        - /tb_odom1/tb101/Shape1
+        - /tb_odom1/tb111/Shape1
+        - /tb_odom1/tb121/Shape1
+        - /tb_odom1/tb131/Shape1
+        - /tb_odom1/tb141/Shape1
+      Splitter Ratio: 0.6775244474411011
+    Tree Height: 1630
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Name: Time
+    SyncMode: 0
+    SyncSource: tb_9
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 100
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_1_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_1_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_1_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_1_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_1_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_1_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_1_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_1_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_1_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_1_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_1/robot_description
+              TF Prefix: tb_1
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot1
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_2/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_2_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_2_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_2_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_2_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_2_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_2_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_2_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_2_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_2_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_2_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_2/robot_description
+              TF Prefix: tb_2
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot2
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_3/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_3_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_3_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_3_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_3_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_3_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_3_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_3_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_3_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_3_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_3_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_3/robot_description
+              TF Prefix: tb_3
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot3
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_0/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_0_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_0_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_0_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_0_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_0_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_0_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_0_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_0_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_0_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_0_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_0/robot_description
+              TF Prefix: tb_0
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot0
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_4_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_4_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_4_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_4_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_4_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_4_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_4_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_4_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_4_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_4_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_4/robot_description
+              TF Prefix: tb_4
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot4
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_5_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_5_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_5_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_5_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_5_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_5_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_5_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_5_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_5_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_5_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_5/robot_description
+              TF Prefix: tb_5
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot5
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_6_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_6_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_6_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_6_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_6_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_6_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_6_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_6_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_6_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_6_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_6/robot_description
+              TF Prefix: tb_6
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot6
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_7_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_7_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_7_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_7_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_7_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_7_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_7_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_7_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_7_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_7_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_7/robot_description
+              TF Prefix: tb_7
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot7
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_8_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_8_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_8_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_8_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_8_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_8_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_8_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_8_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_8_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_8_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_8/robot_description
+              TF Prefix: tb_8
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot8
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_9_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_9_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_9_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_9_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_9_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_9_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_9_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_9_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_9_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_9_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_9/robot_description
+              TF Prefix: tb_9
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot9
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_10_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_10_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_10_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_10_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_10_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_10_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_10_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_10_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_10_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_10_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_10/robot_description
+              TF Prefix: tb_10
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot10
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+                base_footprint:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                base_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                base_scan:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                caster_back_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                imu_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_11_camera_bottom_screw_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_11_camera_color_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_11_camera_color_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_11_camera_depth_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_11_camera_depth_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_11_camera_left_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_11_camera_left_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_11_camera_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                tb_11_camera_right_ir_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                tb_11_camera_right_ir_optical_frame:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                wheel_left_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+                wheel_right_link:
+                  Alpha: 1
+                  Show Axes: false
+                  Show Trail: false
+                  Value: true
+              Name: RobotModel
+              Robot Description: tb_11/robot_description
+              TF Prefix: tb_11
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot11
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+              Name: RobotModel
+              Robot Description: tb_12/robot_description
+              TF Prefix: tb_12
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot12
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+              Name: RobotModel
+              Robot Description: tb_13/robot_description
+              TF Prefix: tb_13
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot13
+        - Class: rviz/Group
+          Displays:
+            - Angle Tolerance: 0.10000000149011612
+              Class: rviz/Odometry
+              Covariance:
+                Orientation:
+                  Alpha: 0.5
+                  Color: 255; 255; 127
+                  Color Style: Unique
+                  Frame: Local
+                  Offset: 1
+                  Scale: 1
+                  Value: true
+                Position:
+                  Alpha: 0.30000001192092896
+                  Color: 204; 51; 204
+                  Scale: 1
+                  Value: true
+                Value: false
+              Enabled: false
+              Keep: 1
+              Name: Odometry
+              Position Tolerance: 0.10000000149011612
+              Queue Size: 10
+              Shape:
+                Alpha: 1
+                Axes Length: 1
+                Axes Radius: 0.10000000149011612
+                Color: 255; 25; 0
+                Head Length: 0.30000001192092896
+                Head Radius: 0.10000000149011612
+                Shaft Length: 0.5
+                Shaft Radius: 0.05000000074505806
+                Value: Arrow
+              Topic: /tb_1/odom
+              Unreliable: false
+              Value: false
+            - Alpha: 1
+              Class: rviz/RobotModel
+              Collision Enabled: false
+              Enabled: true
+              Links:
+                All Links Enabled: true
+                Expand Joint Details: false
+                Expand Link Details: false
+                Expand Tree: false
+                Link Tree Style: Links in Alphabetic Order
+              Name: RobotModel
+              Robot Description: tb_14/robot_description
+              TF Prefix: tb_14
+              Update Interval: 0
+              Value: true
+              Visual Enabled: true
+            - Class: rviz/Group
+              Displays:
+                - Class: rviz/Group
+                  Displays:
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Start
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 1
+                      Value: false
+                    - Class: rviz/Marker
+                      Enabled: true
+                      Marker Topic: /tb_0_plan_manager/OT_Goal
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: true
+                    - Class: rviz/Marker
+                      Enabled: false
+                      Marker Topic: /tb_0_plan_manager/OT_Result
+                      Name: Marker
+                      Namespaces:
+                        {}
+                      Queue Size: 100
+                      Value: false
+                  Enabled: true
+                  Name: tb0_marker
+                - Alpha: 1
+                  Buffer Length: 1
+                  Class: rviz/Path
+                  Color: 239; 41; 41
+                  Enabled: true
+                  Head Diameter: 0.30000001192092896
+                  Head Length: 0.20000000298023224
+                  Length: 0.30000001192092896
+                  Line Style: Billboards
+                  Line Width: 0.05000000074505806
+                  Name: Path0
+                  Offset:
+                    X: 0
+                    Y: 0
+                    Z: 0
+                  Pose Color: 255; 85; 255
+                  Pose Style: None
+                  Queue Size: 10
+                  Radius: 0.029999999329447746
+                  Shaft Diameter: 0.10000000149011612
+                  Shaft Length: 0.10000000149011612
+                  Topic: /tb_0_plan_manager/mpc_traj
+                  Unreliable: false
+                  Value: true
+              Enabled: false
+              Name: OT_and_traj_opt
+            - Alpha: 0.6000000238418579
+              Autocompute Intensity Bounds: true
+              Autocompute Value Bounds:
+                Max Value: 10
+                Min Value: -10
+                Value: true
+              Axis: Z
+              Channel Name: intensity
+              Class: rviz/PointCloud2
+              Color: 52; 101; 164
+              Color Transformer: FlatColor
+              Decay Time: 0
+              Enabled: false
+              Invert Rainbow: false
+              Max Color: 255; 255; 255
+              Min Color: 0; 0; 0
+              Name: PointCloud2_in_rb_0
+              Position Transformer: XYZ
+              Queue Size: 10
+              Selectable: true
+              Size (Pixels): 3
+              Size (m): 0.05000000074505806
+              Style: Flat Squares
+              Topic: /tb_0_plan_manager/grid_map/occupancy
+              Unreliable: false
+              Use Fixed Frame: true
+              Use rainbow: true
+              Value: false
+          Enabled: true
+          Name: robot14
+      Enabled: true
+      Name: multi_robot
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_3_manager_node/astar_result
+          Name: tb3
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_1_manager_node/astar_result
+          Name: tb1
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_2_manager_node/astar_result
+          Name: tb2
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_0_manager_node/astar_result
+          Name: tb0
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_4_manager_node/astar_result
+          Name: tb4
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_5_manager_node/astar_result
+          Name: tb5
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_6_manager_node/astar_result
+          Name: tb6
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_7_manager_node/astar_result
+          Name: tb7
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_8_manager_node/astar_result
+          Name: tb8
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_9_manager_node/astar_result
+          Name: tb9
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+      Enabled: false
+      Name: path
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.10000000149011612
+            Min Value: -0.10000000149011612
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 239; 41; 41
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: tb_0
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Flat Squares
+          Topic: /tb_0_manager_node/grid_map/occupancy_inflate
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.10000000149011612
+            Min Value: -0.10000000149011612
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 252; 175; 62
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: tb_1
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Flat Squares
+          Topic: /tb_1_manager_node/grid_map/occupancy_inflate
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.10000000149011612
+            Min Value: -0.10000000149011612
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 114; 159; 207
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: tb_2
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Flat Squares
+          Topic: /tb_2_manager_node/grid_map/occupancy_inflate
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.10000000149011612
+            Min Value: -0.10000000149011612
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 173; 127; 168
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: tb_3
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Flat Squares
+          Topic: /tb_3_manager_node/grid_map/occupancy_inflate
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.10000000149011612
+            Min Value: -0.10000000149011612
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 136; 138; 133
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: tb_4
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Flat Squares
+          Topic: /tb_4_manager_node/grid_map/occupancy_inflate
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.10000000149011612
+            Min Value: -0.10000000149011612
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 92; 53; 102
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: tb_5
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Flat Squares
+          Topic: /tb_5_manager_node/grid_map/occupancy_inflate
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.10000000149011612
+            Min Value: -0.10000000149011612
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 204; 0; 0
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: tb_6
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Flat Squares
+          Topic: /tb_6_manager_node/grid_map/occupancy_inflate
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.10000000149011612
+            Min Value: -0.10000000149011612
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 211; 215; 207
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: tb_7
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Flat Squares
+          Topic: /tb_7_manager_node/grid_map/occupancy_inflate
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.10000000149011612
+            Min Value: -0.10000000149011612
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 196; 160; 0
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: tb_8
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Flat Squares
+          Topic: /tb_8_manager_node/grid_map/occupancy_inflate
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.10000000149011612
+            Min Value: -0.10000000149011612
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 32; 74; 135
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: tb_9
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Flat Squares
+          Topic: /tb_9_manager_node/grid_map/occupancy_inflate
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+      Enabled: true
+      Name: env
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 52; 101; 164
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.10000000149011612
+          Name: tb0
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_0_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb1
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_1_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb2
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_2_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb3
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_3_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb4
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_4_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb5
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_5_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb6
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_6_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb7
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_7_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb8
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_8_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb9
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_9_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb10
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_10_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb11
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_11_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb12
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_12_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb13
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_13_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 25; 255; 0
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05999999865889549
+          Name: tb14
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_14_manager_node/nmpc_path
+          Unreliable: false
+          Value: true
+      Enabled: true
+      Name: nmpc_traj
+    - Class: rviz/Group
+      Displays: ~
+      Enabled: false
+      Name: shape_pt
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_0_manager_node/odom_and_local_line
+          Name: tb0
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_1_manager_node/odom_and_local_line
+          Name: tb1
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_2_manager_node/odom_and_local_line
+          Name: tb2
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_3_manager_node/odom_and_local_line
+          Name: tb3
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+      Enabled: true
+      Name: odom_local_line
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_2_manager_node/width_mid_point
+          Name: tb_2
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_3_manager_node/width_mid_point
+          Name: tb_3
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_1_manager_node/width_mid_point
+          Name: tb_1
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_0_manager_node/width_mid_point
+          Name: tb_0
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+      Enabled: false
+      Name: debug_pt
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: -0.10000000149011612
+            Min Value: -0.10000000149011612
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 117; 80; 123
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Min Color: 0; 0; 0
+          Name: record_map
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 3
+          Size (m): 0.10000000149011612
+          Style: Flat Squares
+          Topic: /to_record/grid_map/occupancy
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: true
+          Value: true
+        - Class: rviz/Image
+          Enabled: false
+          Image Topic: /tb_0/camera/color/image_raw
+          Max Value: 1
+          Median window: 5
+          Min Value: 0
+          Name: Image
+          Normalize Range: true
+          Queue Size: 2
+          Transport Hint: raw
+          Unreliable: false
+          Value: false
+      Enabled: true
+      Name: recored_map
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 52; 101; 164
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.10000000149011612
+      Style: Flat Squares
+      Topic: /obstacle_manual_cloud
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_0_manager_node/global_point
+          Name: tb0
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_1_manager_node/global_point
+          Name: tb1
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_2_manager_node/global_point
+          Name: tb2
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_3_manager_node/global_point
+          Name: tb3
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_4_manager_node/global_point
+          Name: tb4
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_5_manager_node/global_point
+          Name: tb5
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_6_manager_node/global_point
+          Name: tb6
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_7_manager_node/global_point
+          Name: tb7
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_8_manager_node/global_point
+          Name: tb8
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_9_manager_node/global_point
+          Name: tb9
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_10_manager_node/global_point
+          Name: tb10
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_11_manager_node/global_point
+          Name: tb11
+          Namespaces:
+            "": true
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_12_manager_node/global_point
+          Name: tb12
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_13_manager_node/global_point
+          Name: tb13
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_14_manager_node/global_point
+          Name: tb14
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+      Enabled: true
+      Name: Global_point
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /update_area
+          Name: leader_update_area
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /width_line_one
+          Name: leader_one_line
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /width_line_other
+          Name: leader_other_line
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+      Enabled: false
+      Name: width_debug
+    - Class: rviz/Group
+      Displays:
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb0
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_0/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb1
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_1/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb2
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_2/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb3
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_3/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb4
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_4/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb5
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_5/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb6
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_6/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb7
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_7/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb8
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_8/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb9
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_9/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb10
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_10/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb11
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_11/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb12
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_12/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb13
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_13/odom
+          Unreliable: false
+          Value: true
+        - Angle Tolerance: 0.10000000149011612
+          Class: rviz/Odometry
+          Covariance:
+            Orientation:
+              Alpha: 0.5
+              Color: 255; 255; 127
+              Color Style: Unique
+              Frame: Local
+              Offset: 1
+              Scale: 1
+              Value: true
+            Position:
+              Alpha: 0.30000001192092896
+              Color: 204; 51; 204
+              Scale: 1
+              Value: true
+            Value: false
+          Enabled: true
+          Keep: 1
+          Name: tb14
+          Position Tolerance: 0.10000000149011612
+          Queue Size: 10
+          Shape:
+            Alpha: 1
+            Axes Length: 0.25
+            Axes Radius: 0.10000000149011612
+            Color: 255; 25; 0
+            Head Length: 0.30000001192092896
+            Head Radius: 0.10000000149011612
+            Shaft Length: 1
+            Shaft Radius: 0.05000000074505806
+            Value: Axes
+          Topic: /tb_14/odom
+          Unreliable: false
+          Value: true
+      Enabled: true
+      Name: tb_odom
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /other_swarm_shape
+      Name: swarm_shape
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Alpha: 1
+      Class: rviz/Axes
+      Enabled: false
+      Length: 1
+      Name: Axes
+      Radius: 0.10000000149011612
+      Reference Frame: <Fixed Frame>
+      Show Trail: false
+      Value: false
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 138; 226; 52
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.10000000149011612
+          Name: RRT_Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_0_manager_node/rrt_path
+          Unreliable: false
+          Value: true
+        - Class: rviz/MarkerArray
+          Enabled: true
+          Marker Topic: /tb_0_manager_node/rrt_circles
+          Name: MarkerArray
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+      Enabled: true
+      Name: rrt
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 239; 41; 41
+          Enabled: false
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path0
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_0_manager_node/custom_path
+          Unreliable: false
+          Value: false
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 173; 127; 168
+          Enabled: false
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path1
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_1_manager_node/custom_path
+          Unreliable: false
+          Value: false
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 173; 127; 168
+          Enabled: false
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path2
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_2_manager_node/custom_path
+          Unreliable: false
+          Value: false
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 173; 127; 168
+          Enabled: false
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path3
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_3_manager_node/custom_path
+          Unreliable: false
+          Value: false
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 173; 127; 168
+          Enabled: false
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path4
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_4_manager_node/custom_path
+          Unreliable: false
+          Value: false
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 173; 127; 168
+          Enabled: false
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path5
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_5_manager_node/custom_path
+          Unreliable: false
+          Value: false
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 173; 127; 168
+          Enabled: false
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path6
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_6_manager_node/custom_path
+          Unreliable: false
+          Value: false
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 173; 127; 168
+          Enabled: false
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path7
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /tb_7_manager_node/custom_path
+          Unreliable: false
+          Value: false
+      Enabled: true
+      Name: frm_path
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_0_manager_node/local_goal
+          Name: tb0
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_1_manager_node/local_goal
+          Name: tb1
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_2_manager_node/local_goal
+          Name: tb2
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_3_manager_node/local_goal
+          Name: tb3
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_4_manager_node/local_goal
+          Name: tb4
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_5_manager_node/local_goal
+          Name: tb5
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_6_manager_node/local_goal
+          Name: tb6
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_7_manager_node/local_goal
+          Name: tb7
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_8_manager_node/local_goal
+          Name: tb8
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_9_manager_node/local_goal
+          Name: tb9
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_10_manager_node/local_goal
+          Name: tb10
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_11_manager_node/local_goal
+          Name: tb11
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+      Enabled: true
+      Name: local_point
+    - Class: rviz/Group
+      Displays:
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_0_manager_node/update_area
+          Name: update_area
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_0_manager_node/width_line_one
+          Name: one_line
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_0_manager_node/width_line_other
+          Name: other_line
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+        - Class: rviz/Marker
+          Enabled: true
+          Marker Topic: /tb_0_manager_node/width_mid_point
+          Name: mid_point
+          Namespaces:
+            {}
+          Queue Size: 100
+          Value: true
+      Enabled: false
+      Name: widthCheck
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /tb_5_manager_node/odom_and_local_line
+      Name: tb0
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /tb_4_manager_node/odom_and_local_line
+      Name: tb1
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /tb_6_manager_node/odom_and_local_line
+      Name: tb2
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /tb_7_manager_node/odom_and_local_line
+      Name: tb3
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 239; 41; 41
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_0
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 252; 175; 62
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_1
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 252; 233; 79
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_2
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 138; 226; 52
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_3
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 173; 127; 168
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_4
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 233; 185; 110
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_5
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 136; 138; 133
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_6
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 227; 74; 111
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_7
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 96; 165; 97
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_8
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 172; 172; 143
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_9
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 64; 67; 191
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_10
+          Unreliable: false
+          Value: true
+        - Alpha: 1
+          Buffer Length: 1
+          Class: rviz/Path
+          Color: 64; 191; 173
+          Enabled: true
+          Head Diameter: 0.30000001192092896
+          Head Length: 0.20000000298023224
+          Length: 0.30000001192092896
+          Line Style: Billboards
+          Line Width: 0.05000000074505806
+          Name: Path
+          Offset:
+            X: 0
+            Y: 0
+            Z: 0
+          Pose Color: 255; 85; 255
+          Pose Style: None
+          Queue Size: 10
+          Radius: 0.029999999329447746
+          Shaft Diameter: 0.10000000149011612
+          Shaft Length: 0.10000000149011612
+          Topic: /path_11
+          Unreliable: false
+          Value: true
+      Enabled: false
+      Name: Group
+  Enabled: true
+  Global Options:
+    Background Color: 255; 255; 255
+    Default Light: true
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Angle: 0.004999999888241291
+      Class: rviz/TopDownOrtho
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Scale: 114.23999786376953
+      Target Frame: <Fixed Frame>
+      X: 4.869259834289551
+      Y: -0.311091810464859
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: true
+  Height: 2002
+  Hide Left Dock: true
+  Hide Right Dock: true
+  Image:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000400000000000002b6000006ccfc020000000dfb0000001200530065006c0065006300740069006f006e00000001e10000009b000000b000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000b0fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073000000006e000006cc0000018200fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0069006d00610067006502000007800000014a00000280000001e0fb0000000a0049006d0061006700650000000441000001080000002600fffffffb0000000a0049006d00610067006502000007770000013200000213000001a1fb0000000c00430061006d00650072006100000007f4000000f40000000000000000fb0000000a0049006d006100670065020000055200000537000006cb000002d500000001000002da000006ccfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000006e000006cc0000013200fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e1000001970000000300000d500000005efc0100000002fb0000000800540069006d0065010000000000000d50000006dc00fffffffb0000000800540069006d0065010000000000000450000000000000000000000d50000006cc00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 3408
+  X: 0
+  Y: 54

@@ -1,0 +1,66 @@
+<launch>
+    <arg name="gz_gui" default="false"/>
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch"> 
+         <arg name="world_name" value="$(find multi_turtlebot3_simulation)/worlds/test_multi_obs.world" /> 
+<!--         <arg name="world_name" value="$(find multi_turtlebot3_simulation)/worlds/corrider.world" /> -->
+<!--         <arg name="world_name" value="$(find multi_turtlebot3_simulation)/worlds/multi_obs.world" /> -->
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="$(arg gz_gui)"/>
+        <arg name="headless" value="false"/>
+        <arg name="debug" value="false"/>
+    </include>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find multi_turtlebot3_simulation)/launch/multi_robot.rviz" required="true" />
+
+    <include file="$(find multi_turtlebot3_simulation)/launch/one_robot.xml">
+        <arg name="tb3_name"    default="tb_0"/>
+        <arg name="robot_x_pos" default="0.0"/>
+        <arg name="robot_y_pos" default="0.0"/>
+        <arg name="robot_z_pos" default="0.0"/>
+        <arg name="robot_yaw"   default="0.0"/>
+    </include>
+
+
+   <include file="$(find multi_turtlebot3_simulation)/launch/one_robot.xml">
+       <arg name="tb3_name"  default="tb_1"/>
+       <arg name="robot_x_pos" default="0.0"/>
+       <arg name="robot_y_pos" default="-1.6"/>
+       <arg name="robot_z_pos" default=" 0.0"/>
+       <arg name="robot_yaw"   default=" 0.0 "/>
+   </include>
+
+    <include file="$(find multi_turtlebot3_simulation)/launch/one_robot.xml">
+        <arg name="tb3_name"  default="tb_2"/>
+        <arg name="robot_x_pos" default="0.0"/>
+        <arg name="robot_y_pos" default="0.8"/>
+        <arg name="robot_z_pos" default=" 0.0"/>
+        <arg name="robot_yaw"   default=" 0.0"/>
+    </include>
+
+    <include file="$(find multi_turtlebot3_simulation)/launch/one_robot.xml">
+        <arg name="tb3_name"  default="tb_3"/>
+        <arg name="robot_x_pos" default="0.0"/>
+        <arg name="robot_y_pos" default="-0.8"/>
+        <arg name="robot_z_pos" default=" 0.0"/>
+        <arg name="robot_yaw"   default=" 0.0"/>
+    </include>
+
+<!--     <include file="$(find multi_turtlebot3_simulation)/launch/one_robot.xml"> -->
+<!--         <arg name="tb3_name"  default="tb_4"/> -->
+<!--         <arg name="robot_x_pos" default="4.0"/> -->
+<!--         <arg name="robot_y_pos" default="-1.0"/> -->
+<!--         <arg name="robot_z_pos" default=" 0.0"/> -->
+<!--         <arg name="robot_yaw"   default=" 0.0"/> -->
+<!--     </include> -->
+
+<!--     <include file="$(find multi_turtlebot3_simulation)/launch/one_robot.xml"> -->
+<!--         <arg name="tb3_name"  default="tb_5"/> -->
+<!--         <arg name="robot_x_pos" default="4.0"/> -->
+<!--         <arg name="robot_y_pos" default="-2.0"/> -->
+<!--         <arg name="robot_z_pos" default=" 0.0"/> -->
+<!--         <arg name="robot_yaw"   default=" 0.0"/> -->
+<!--     </include> -->
+
+</launch>

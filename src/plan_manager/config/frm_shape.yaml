@@ -1,0 +1,30 @@
+
+task_type: 1  #  1 means formation navigation, 2 means formation change,
+vehicle_number: 12 # It must be the same as plan_manager/tb_num
+initial_shape_positions:
+  vehicle_pos_1: {x: 0.0, y: 0.0}
+  vehicle_pos_2: {x: 0.0, y: -1.0}
+  vehicle_pos_3: {x: 0.0, y: -2.0}
+  vehicle_pos_4: {x: 0.0, y: -3.0}
+  vehicle_pos_5: {x: -1.0, y: -1.0}
+  vehicle_pos_6: {x: -1.0, y: -2.0}
+  vehicle_pos_7: {x: -1.0, y: -3.0}
+  vehicle_pos_8: {x: -1.0, y: -4.0}
+  vehicle_pos_9: {x: -2.0, y: -2.0}
+  vehicle_pos_10: {x: -2.0, y: -3.0}
+  vehicle_pos_11: {x: -2.0, y: -4.0}
+  vehicle_pos_12: {x: -2.0, y: -5.0}
+
+desired_shape_positions:
+  vehicle_pos_1: {x: 0.0, y: 0.0}
+  vehicle_pos_2: {x: -1.0, y: 1.0}
+  vehicle_pos_3: {x: -2.0, y: 2.0}
+  vehicle_pos_4: {x: -3.0, y: 2.0}
+  vehicle_pos_5: {x: -4.0, y: 1.0}
+  vehicle_pos_6: {x: -5.0, y: 0.0}
+  vehicle_pos_7: {x: -5.0, y: -1.0}
+  vehicle_pos_8: {x: -4.0, y: -2.0}
+  vehicle_pos_9: {x: -3.0, y: -3.0}
+  vehicle_pos_10: {x: -2.0, y: -3.0}
+  vehicle_pos_11: {x: -1.0, y: -2.0}
+  vehicle_pos_12: {x: 0.0, y: -1.0}

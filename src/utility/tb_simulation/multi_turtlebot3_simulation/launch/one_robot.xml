@@ -1,0 +1,32 @@
+<launch>
+    <arg name="model" default="burger" doc="model type [burger, waffle, waffle_pi]"/>
+    <arg name="tb3_name"  default="tb_0"/>
+
+    <arg name="robot_x_pos" default="0.0"/>
+    <arg name="robot_y_pos" default="0.0"/>
+    <arg name="robot_z_pos" default=" 0.0"/>
+    <arg name="robot_yaw"   default=" 0.0"/>
+
+    <group ns = "$(arg tb3_name)">
+        <param name="robot_description" command="$(find xacro)/xacro
+            $(find turtlebot3_description)/urdf/turtlebot3_$(arg model).urdf.xacro
+            ns:=$(arg tb3_name)"
+        />
+        <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen">
+            <param name="publish_frequency" type="double" value="50.0" />
+            <param name="tf_prefix" value="$(arg tb3_name)" />
+        </node>
+        <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+              args="-urdf
+                    -model $(arg tb3_name)
+                    -x $(arg robot_x_pos)
+                    -y $(arg robot_y_pos)
+                    -z $(arg robot_z_pos)
+                    -Y $(arg robot_yaw)
+                    -param robot_description"
+        />
+    </group>
+
+    <node pkg="tf" type="static_transform_publisher" name="$(arg tb3_name)_odom_to_world" args="0 0.0 0.0 0.0 0.0 0.0 /world $(arg tb3_name)/odom 40"/>
+
+</launch>
