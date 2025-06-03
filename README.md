@@ -22,7 +22,7 @@ DEFORM is an adaptive formation reconfiguration method that can autonomously adj
 
 ### 1.1 Related Video
 
-Our accompanying video is now available on [**Bilibili**](https://www.bilibili.com/video/BV1RPRqYTEV6) and [**YouTube**](https://youtu.be/Gp7ctSpoegI).
+Our accompanying video is now available on [**Bilibili**](https://www.bilibili.com/video/BV1ptEEzQEHm) and [**YouTube**](https://youtu.be/Gp7ctSpoegI).
 
 ### 1.2 Related paper
 
