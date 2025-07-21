@@ -188,7 +188,7 @@ If our repo helps your academic projects, please cite our paper. Thank you!
 
 ## 7 Acknowlegements
 
-我们有一部分功能包是用开源代码实现的：
+Some of our feature packages are implemented using open-source code:
 
 - [plan_env2d](./src/perception/plan_env2d/): https://github.com/ZJU-FAST-Lab/Swarm-Formation/tree/main/src/planner/plan_env
 - [path_searching2d](./src/planning/path_searching2d): https://github.com/ZJU-FAST-Lab/Swarm-Formation/tree/main/src/planner/path_searching
