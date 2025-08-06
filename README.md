@@ -26,9 +26,9 @@ Our accompanying video is now available on [**Bilibili**](https://www.bilibili.c
 
 ### 1.2 Related paper
 
-Jin Li, Yang Xu, Xiufang Shi, Liang Li, **"DEFORM: Adaptive Formation Reconfiguration of Multi-robot System in Confined Environments"**, In *IEEE Robotics and Automation Letters(RA-L)*, 2025. [IEEE](https://ieeexplore.ieee.org/document/10933518), [Paper](./RA_L_DEFORM.pdf)
+Jin Li, Yang Xu, Xiufang Shi, Liang Li, **"DEFORM: Adaptive Formation Reconfiguration of Multi-robot System in Confined Environments"**, In *IEEE Robotics and Automation Letters(RA-L)*, 2025. [IEEE](https://ieeexplore.ieee.org/document/10933518), [Paper](./RA_L_DEFORM.pdf), [Thesis (Chinese)](./These.pdf).
 
-## 2 Prerequisites
+### 2 Prerequisites
 
 2.1 **Ubuntu** and **ROS**: Ubuntu 20.04. ROS Noteic. ROS Installation additional ROS package:
 
